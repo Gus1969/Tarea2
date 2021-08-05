@@ -15,4 +15,7 @@ h2 {
 h2 span {
     color: brown;
 }
+a {
+    text-decoration: underline;
+}
 
