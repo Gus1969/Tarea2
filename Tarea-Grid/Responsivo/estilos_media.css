@@ -5,13 +5,15 @@
 }
 body {
     padding: 30px 60px;
+    background-color: wheat;
 }
 .container{
     display: grid;
     grid-template-columns:  repeat (5,  1fr);
     grid-template-rows: 100px 1fr  1fr;
-   gap: 20px 10px;
-     grid-template-areas: " logo logo link link link  "
+    gap: 20px 10px; 
+   
+     grid-template-areas: " logo link link link link  "
                                         " bloque bloque bloque bloque bloque "
                                         "last last last last last ";
                                          
@@ -26,6 +28,7 @@ header  {
     letter-spacing: 0.2rem;
       grid-area: logo ;  
      color: black;
+     background-color: yellow;
      /* grid-column-start: 1;
      grid-column-end: 2;
      grid-row-start: 1;
