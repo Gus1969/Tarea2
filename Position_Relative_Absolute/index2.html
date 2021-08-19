@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>Desafío CSS - Position</title>
+</head>
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+
+}
+body{
+  background-color:#EAECEF;
+  height:100vh;
+}
+.tarjeta{
+  display:flex;
+  justify-content:center;
+  /* width:30%; */
+  min-width:300px;
+   max-width:350px;  
+  height:50%;
+  border-radius:1.5rem;
+  margin: 8em auto;
+  background-image:url("https://as01.epimg.net/deporteyvida/imagenes/2018/06/15/portada/1529051864_567397_1529052016_noticia_normal.jpg");
+  background-position:center;
+  /* background-repeat: no-repeat; */
+  box-shadow:0px 5px 5px 10px black;
+}
+
+.caja-titulo{
+  background-color:black;
+   display:flex; 
+  align-items:center;
+  justify-content:center;
+  width:70%;
+  height:10%;
+  border-radius:0.7rem;
+  position:relative; 
+  bottom:2em;
+  
+ 
+}
+
+.caja-titulo__titulo{
+  color:white;
+  margin-right:auto;
+  margin-left:auto;
+}
+</style>
+<body>
+  <div class="tarjeta"> 
+    <div class="caja-titulo">
+      <h1 class="caja-titulo__titulo">Sushi</h1>
+    </div>
+    <div class="texto"></div>
+  </div>
+</body>
+</html>
+    
