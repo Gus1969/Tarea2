@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+  }
+  
+  button {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px;
+    align-items: center;
+    justify-items: center;
+    background-color: gainsboro;
+  }
+  
+  header>button {
+    background-color: crimson;
+    width: 60%;
+    height: 15%;
+    transition-duration: 1s;
+  }
+  
+  section>button {
+    height: 30px;
+    width: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition-property: transform;
+    transition-duration: 2s;
+    transform: translateX(100vh) ;
+  }
+  
+  .linear {
+    background-color: brown;
+    transition-timing-function: linear;
+  }
+  
+  .ease-out {
+    background-color: blue;
+    transition-timing-function: ease-out;
+  }
+  .ease-in {
+      background-color:  black;
+      transition-timing-function: ease-in;
+  }
+  
+   .funcion {
+    background-color: blueviolet;
+    transition-timing-function: cubic-bezier(0.63, 1.59, 0.3, -0.51);
+  } 
+  
+  .ensancha {
+    transition-property: width;
+  }
+  
+  .ensancha:hover {
+    width: 90%;
+  }
+  
+   .agranda {
+    transition-property: width, height;
+  } 
+  
+  .agranda:hover {
+    width: 90%;
+    height: 30%;
+  }
+  
+   .cambia-color {
+    transition-property: background-color;
+  } 
+  
+  .cambia-color:hover {
+    background-color: blue;
+  }
+  

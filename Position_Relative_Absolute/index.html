@@ -18,6 +18,17 @@
     margin: 0;
     padding: 0;
     }
+    input {
+      width: 30px;
+      height: 30px;
+     margin-left: 50%;
+      border: 1px solid brown;
+      
+    }
+    input:checked ~.principal {
+     border-radius: 19%;
+    
+    }
 
     .principal{
         background-color: wheat;
@@ -26,6 +37,10 @@
         margin: 8rem auto;
         border-radius: 100px;
         border: 5px solid maroon;
+         transition-property: border;
+      transition-duration: 2s; 
+     
+      
     
     }
 
@@ -55,7 +70,9 @@
     </style>
 </head>
 <body>
+  <input type="radio">
     <div class="principal">
+     
         <div class="second">
             <p class="text2">Lorem ipsum</p>
         </div>

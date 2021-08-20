@@ -1,0 +1,125 @@
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body {
+background:  lightgray;
+height: 100vh;
+width: 100%;
+}
+main {
+    margin: 0 200px 0 200px;
+    background: lightgray;
+     display: grid;
+    grid-template-columns: 300px  1fr;
+    grid-template-rows: 250px 1fr  1r 150px;
+    grid-template-areas:  " header header"
+                                            "aside section"
+                                            " aside section"
+                                            "footer footer"; 
+   height: 100vh;
+   
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+
+ header {
+    grid-area: header;
+    background: blue;
+    padding: 30px 0;
+   
+ }
+header .title {
+    display: grid;
+   align-items: center;
+   justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 5px;
+   
+}
+header .lead {
+    display: grid;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+} 
+aside {
+   display: grid; 
+  grid-area: aside;
+    /* grid-column-start: 1 ;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5 ; */
+  
+    background:  lightseagreen;
+    color: black;
+    display: grid;
+    justify-content: start;
+
+}
+.contenido {
+    padding-top: 20px;
+}
+.contenido h2 {
+
+    font-size: 30px;
+    color: black;
+    
+}
+.list {
+   padding: 30px 30px;
+}
+.list .item {
+    font-size: 19px;
+    font-weight: 600;
+}
+.groceries {
+    padding-left: 15px;
+}
+.groceries  li {
+    list-style-type: disc;
+   
+}
+section {
+    background: white;
+    grid-area: section;
+}
+section article {
+    text-align: left;
+    margin: 100px 200px;
+}
+section article p {
+    margin-top: 20px;
+}
+figure img {
+    width: 400px;
+    height: 400px;
+    margin-left: 200px;
+   
+}
+figure figcaption {
+    margin-left: 200px;
+    margin-bottom: 30px;
+   
+}
+footer {
+    background: rgba(255, 217, 0, 0.466);
+    grid-area: footer;
+}
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+footer ul li a{
+    color:  black;
+}
