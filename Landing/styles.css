@@ -22,10 +22,6 @@ main {
    height: 100vh;
    
 }
-img {
-    width: 200px;
-    height: 200px;
-}
 
  header {
     grid-area: header;
@@ -101,8 +97,8 @@ section article p {
     margin-top: 20px;
 }
 figure img {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 350px;
     margin-left: 200px;
    
 }
