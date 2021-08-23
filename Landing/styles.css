@@ -95,11 +95,30 @@ figure img {
     width: 500px;
     height: 350px;
     margin-left: 200px;
+     /* transition-property: transform width (-200px); */
+    /* transition-timing-function: ease-out;; */
+    transition:  ease-in-out 1s;
+    transform: translateX(200px); 
+    
+
+    
+  
    
 }
 figure figcaption {
     margin-left: 200px;
     margin-bottom: 30px;
+    /* transition-property: transform;
+    transition-duration: 2s;
+    transform: translateX(200px); */
+    transition-property: font-size;
+    transition:  ease-in-out 1s;
+    transform: translateX(200px); 
+    font-size: 150%;
+    color: brown;
+  
+
+  
    
 }
 footer {
@@ -172,4 +191,7 @@ footer ul li a{
         margin:unset;
     }
 } 
+img:hover {
+    border: 3px solid brown;
+}
     
