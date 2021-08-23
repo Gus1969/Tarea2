@@ -81,7 +81,7 @@
     transition-property: background-color;
   } 
   
-  .cambia-color:hover {
+  .color:hover {
     background-color: blue;
   }
   
