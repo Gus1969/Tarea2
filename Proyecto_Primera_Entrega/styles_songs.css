@@ -1,0 +1,124 @@
+* {
+    margin:  0;
+    padding:  0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+   }
+   
+   html{
+      position: relative;
+      background:  darkslategrey;
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+  } 
+  
+  nav {
+    display: grid;
+   background: rgba(255, 0, 255, 0.7);
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 150px;
+   justify-items: center;
+   align-items: center;
+   height: 150px;
+   grid-column-start: 1 ;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+   
+  }
+  nav .logo  {
+    grid-column-start: 1 ;
+    grid-column-end: 2;
+    justify-items: center;
+    align-items: center;
+  }
+  .logo h1 {
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    padding: 15px;
+  }
+  
+  .nav .links{
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+  
+  }
+  .enlaces .item {
+    display: inline;
+    padding: 20px;
+  }
+  .item .toppers {
+    list-style-type: none;
+    color: white;
+      display: inline;
+    font-size: 20px;
+   
+      text-decoration: none;
+      padding: 10px;
+  }
+   
+   nav.registro {
+    grid-column-start: 3 ;
+    grid-column-end: 4;
+  }
+  .register .item {
+  display: inline;
+  padding: 20px;
+  }
+  .item .toppers:hover {
+    padding: 20px;
+    border-radius: 10%;
+    text-transform: uppercase;
+    transform: all 1s ease-in-out;
+    border: 2px solid black;
+   color: black;
+  
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+   
+    width: 100vw;
+    background: darkslategray;
+    justify-content: center;
+    align-content: center;
+  }
+  main .title {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+ input {
+   margin: 20px 350px;
+   padding: 20px;
+   border-radius:25px;
+   border-color: rgba(255, 0, 255, 0.7);
+  }
+
+  
+.footer {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  height: 150px;
+  background: rgba(255, 0, 255, 0.7);
+}
+
+.footer  span  {
+  display: grid;
+   color: white;
+   justify-content: center;
+   align-items: center;
+ 
+ }
