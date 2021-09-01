@@ -42,4 +42,8 @@ function enviarDatos(registro) {
 	  alert("Se ha registrado correctamente");
 	 return true;
 	}
+
+	
+		
+	
 	
