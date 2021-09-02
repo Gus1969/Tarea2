@@ -75,10 +75,10 @@ nav {
   display: grid;
  background: rgba(255, 0, 255, 0.7);
  grid-template-columns: 1fr 1fr 1fr;
- grid-template-rows: 150px;
+ grid-template-rows: 90px;
  justify-items: center;
  align-items: center;
- height: 150px;
+
  grid-column-start: 1 ;
   grid-column-end: 3;
   grid-row-start: 1;
@@ -88,7 +88,7 @@ nav {
 nav .logo  {
   grid-column-start: 1 ;
   grid-column-end: 2;
-  justify-items: center;
+  justify-items: start;
   align-items: center;
 }
 .logo h1 {
@@ -122,6 +122,8 @@ nav .logo  {
  nav.register {
   grid-column-start: 3 ;
   grid-column-end: 4;
+  justify-content: center;
+ 
 }
 .register .item {
 display: inline;
@@ -131,11 +133,10 @@ padding: 20px;
   padding: 20px;
   border-radius: 10%;
   text-transform: uppercase;
-  transform: all 1s ease-in-out;
-  border: 2px solid black;
- color: black;
-
 }
+
+
+
 /* /////////////////////////////////////main/////////////////////////////// */
 main {
   display: grid;
@@ -182,13 +183,12 @@ button .canciones {
 .carousel {
   grid-column-start: 2;
   grid-column-end: 3;
-  justify-items: center;
-  align-items: center;
+  /*justify-items: center;
+    align-items: center;  */
   background: rgba(255, 0, 255, 0.7);
   text-align: center;
   padding: 4em 0;
   height: 26.5em;
-  max-width: 1000px;
   position: relative;
   overflow: hidden;
   margin: 35px 40px 20px 90px;
@@ -305,8 +305,8 @@ button .canciones {
   display: table;
   width:100%;
   border-collapse:collapse;
-  margin: 20px auto;
-  width: 50%;
+  margin: 40px auto;
+  width: 70%;
 } 
 .table-title{
   display: grid;
@@ -398,7 +398,7 @@ footer span {
      main {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 300px 1fr 1fr;
+      grid-template-rows: 320px 360px 1fr;
       
     } 
     .texto-carousel {
@@ -415,16 +415,17 @@ footer span {
     .carousel {
       display: grid;
       grid-template-columns: 1fr;
+      margin: 35px 5px 20px 5px;
       width: 100%;
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 2;
       grid-row-end: 3;  
       background: rgba(255, 0, 255, 0.7);
-       text-align: center; 
+       text-align: center;  
       padding: 4em 0;
       height: 20.5em;
-      position: relative;
+     
     }
     .carousel h2 {
       margin: 20px 0;
@@ -482,23 +483,24 @@ footer span {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 100px;
+      grid-column-start: 1;
       justify-items: center;
       align-items: center;
     }
    section {
+     margin: 10px 0;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
-      grid-column-start: 1;
-      grid-column-end: 2;
+      
       grid-row-start: 3;
       grid-row-end: 4;
       justify-content: center;
-      align-items: center;
+      align-items: center; 
     }
     
 }
-@media (min-width: 769px) and  (max-width: 1230px) {
+@media (min-width: 769px) and  (max-width: 1690px) {
   nav {
     display: grid;
    background: rgba(255, 0, 255, 0.7);
@@ -728,15 +730,25 @@ footer span {
   .carousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
     background:  darkslategray;
   }
-  section {
+  .table-title {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+    grid-column-start: 1;
+    justify-items: center;
+    align-items: center;
+    
+    
+  }
+ section {
+   margin: 10px 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    
     grid-row-start: 3;
     grid-row-end: 4;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
   }
 }

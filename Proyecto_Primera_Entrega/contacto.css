@@ -16,10 +16,10 @@
     display: grid;
    background: rgba(255, 0, 255, 0.7);
    grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 150px;
+   grid-template-rows: 90px;
    justify-items: center;
    align-items: center;
-   height: 150px;
+   
    grid-column-start: 1 ;
     grid-column-end: 3;
     grid-row-start: 1;
