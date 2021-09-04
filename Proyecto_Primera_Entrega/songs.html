@@ -1,80 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/> -->
+  <head>
+    <link rel="stylesheet" href="./styles_songs.css">
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
-<link rel="stylesheet" href="./styles_songs.css">
-<title>Songs</title>
-</head>
-<body style="background: darkslategray;">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <body style="background: darkslategray;">
  
     
   
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top mobile">
-        <header>
-           <h1 class="logo"> HITS </h1> 
-        </header>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#links">
-            <span class="navbar-toggler-icon"></span></button>
-              <div class="collapse navbar-collapse ml-4" id="links">
-            
-                <ul class="navbar-nav mx-auto mt-2 enlaces">
-                    <li class="item"> <a class="toppers"  href="./index.html"> Inicio</a></li>
-                    <li class="item"> <a  class="toppers" href="songs.html"> Canciones</a></li>
-                  </ul>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+          <header>
+             <h1 class="logo"> HITS </h1> 
+          </header>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#links">
+              <span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse ml-4" id="links">
               
-                  <ul class="navbar-nav mr-1 mt-2  register">
-                    <li class="item"> <a class="toppers" href="inicio.html">Ingrese</a></li>
-                    <li class="item"> <a class="toppers"  href="registro.html"> Registro</a></li>
-                    <li class="item"> <a class="toppers" href="contacto.html"> Contacto</a></li>
-                  </ul>
-                </div>
-              </nav>
-              <div class="container">
+                  <ul class="navbar-nav mx-auto mt-2 enlaces">
+                      <li class="item"> <a class="toppers"  href="./index.html"> Inicio</a></li>
+                      <li class="item"> <a  class="toppers" href="songs.html"> Canciones</a></li>
+                    </ul>
+                
+                    <ul class="navbar-nav mr-1 mt-2  register">
+                      <li class="item"> <a class="toppers" href="inicio.html">Ingrese</a></li>
+                      <li class="item"> <a class="toppers"  href="registro.html"> Registro</a></li>
+                      <li class="item"> <a class="toppers" href="contacto.html"> Contacto</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <div class="container">
+        
+            <h2>Canciones</h2>
+            
+                <input id="buscador" type="text" class="form-control" placeholder="Buscar.." style="border-radius: 5px; border-color: blueviolet;">
+            
+            <br>
+            <section class="row d-flex justify-content-center" id="hits" > 
+  
+            </section>
+            </div>
+            <footer class="footer">
+              <span >@Derechos Reservados</span>
+            </footer>
       
-          <h2>Canciones</h2>
-          
-              <input id="buscador" type="text" class="form-control" placeholder="Buscar.." style="border-radius: 5px; border-color: blueviolet;">
-          
-          <br>
-          <section class="row d-flex justify-content-center" id="hits" > 
-
-          </section>
-          </div>
-          <footer class="footer">
-            <span >@Derechos Reservados</span>
-          </footer>
-
-<!-- jQuery -->
-   
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-crossorigin="anonymous"
-></script>
-
-<!-- JS de Popper.js -->
-<script
-src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-crossorigin="anonymous"
-></script>
-
-<!-- JS de Bootstrap -->
-<script
-src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-crossorigin="anonymous"
-></script>
-
-<!-- JS de Vue.js -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
-
-<script src="./index.js"></script>
-</body>
+            <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"
+            ></script>
+            
+            <!-- JS de Popper.js -->
+            <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+            ></script>
+            
+            <!-- JS de Bootstrap -->
+            <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+            ></script>
+            
+            <!-- JS de Vue.js -->
+            <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+            
+    
+    <script src="./index.js"></script>
+  </body>
 </html>

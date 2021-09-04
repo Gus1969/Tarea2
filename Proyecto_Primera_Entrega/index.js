@@ -1,25 +1,27 @@
-
-var top3 = [];
-var tabla;
-var sonido; 
+			
+/*
 $(document).ready(function() { 
-	var suboCanciones = function(){
+	 let suboCanciones = function(){
 	 
-	 var temas = null;
+	 let temas = null;
 	
-	//   var reproducciones
-	//   var nombre = "";
+		let   reproducciones = "";
+		let  nombre = "";
 	 $.ajax({
 		 async: false,
 		  url: "datos.json",
 		 success: function(resultado) {
 			temas = resultado.songs; 
+			let top3 = [];
+			let tabla;
+			let sonido; 
+			
 			
 		
 			$("#buscador").on("keyup", function() {
-				var valor = $(this).val().toLowerCase();
-				$("#hits div .col-12").filter(function() {
-				 $(this).toggle($(this).text().toLowerCase().indexOf(valor) > -1)
+				let valor = $(this).val().toLowerCase();
+				$("#hits .col-12").filter(function() {
+				 $(this).toggle($(this).text().toLowerCase().indexOf(valor) > 1)
 				});
 			  });
 				  //songs.sort();
@@ -28,27 +30,29 @@ $(document).ready(function() {
 					});
 					temas.reverse();
 					console.log(temas);
-					for(var i = 0; i <= 2; i++){
-						sonido = `<audio controls src="./canciones/${songs[i].ruta}"><p>Su navegador no soporta el elemento de audio.</p></audio>`
-						 tabla += `<tr><td class=".table-body">${songs[i].nombre}</td><td>${sonido}</td></tr>`
+					for(let  i = 0; i <= 3; i++){
+						sonido = `<audio controls src="./canciones/${songs[i].ruta}"></audio>`
+						 tabla += `<tr><td class=".table-row  .cancion">${songs[i].nombre}</td><td>${sonido}</td></tr>`
 		 }	
-		}
-		
-	 });
-		return temas
-	}();
+					$("#tablero .table-row body").append(tabla);
+							
+					}
+					
+				});
+					return temas
+				}();
 	
 
-		var html = ""
-		
-			  for(var i = 0; i < suboCanciones.length; i++)  {                     
-			
+				let  html = "";
+				
+					for( let i = 0; i < suboCanciones.length; i++)  {                     
+					
 				
 
 			html += `
 					<div class="card text-center">
 					<div class="col-12">
-					<img src='./IMG/imagenes/icono_${suboCanciones[i].icono}.png 'width=55%' alt='cancion'>
+					<img src='./IMG/imagenes/icono_${suboCanciones[i].icono}.png 'width=65%' alt='cancion'>
 					<br>
 					<h3>${suboCanciones[i].nombre}</h3>
 					<p>Reproducciones: ${suboCanciones[i].reproducciones}</p>
@@ -62,7 +66,8 @@ $(document).ready(function() {
 		}
 		document.getElementById('hits').innerHTML = html;
 		
-});
+});*/
+
 
 
 
@@ -76,40 +81,46 @@ $('.page-loader').fadeOut('slow');
 /////////////////////VALIDAR FORMULARIO DE REGISTRO ////////////////////
 function enviarDatos(registro) {
 
-	var re = /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/; 
+	let  re = /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/; 
 		if(!re.test(registro.email.value)){
-	  alert("el email es obligatorio");
+			document.getElementById('errormsg'). innerHTML = " ¡Ingrese su correo electrónico!";
 	  return false;
 	  } else
 	
 	 if(registro.password.value.trim().length == 0) {
-		 alert("Ingrese su palabra clave");
+		document.getElementById('errorpwd'). innerHTML = " ¡Ingrese su contraseña!";
 		 return false;
 	 } else
 	 if(registro.password.value != registro.confirmacion.value) {
-		 alert("la confirmacion no coincide");
+		document.getElementById('errorpwd1'). innerHTML = "¡La contraseña no coincide!";
 		 return false;
 	 }  else
-	 if(registro.género.value == "") {
-		alert("Seleccione una de las opciones");
+	 if(registro.género.value === "") {
+		document.getElementById('errorgenero'). innerHTML = "¡Seleccione genero musical!";
 		 return false;
 	 } else
-	   if(registro.edades.value  == "") {
-		   document.getElementById('errormsg'). innerHTML = "Ingrese su edad";
+	   if(registro.edades.value  === "") {
+		document.getElementById('erroredad'). innerHTML = "¡Por favor ingrese su rango etáreo!";
 		  return false;
-	  }  else
+	   } else
+		  
 	   if (registro.edades.value  === "joven")  {
-		document.getElementById('errormsg'). innerHTML = " Permiso denegado";
+		document.getElementById('erroredad'). style.display = "none";
+		document.getElementById('errorjoven'). innerHTML = "Solo apto para mayores de 18 años.";
 		return false;
-	}
+	  
+	} else
 	  
 	  if(!registro.condiciones.checked) {
-		  alert('Debe aceptar los terminos y condiciones');
+		document.getElementById('errorterm'). innerHTML = "Debe aceptar los térrminos y condiciones.";
 		  return false;
 	  } else
 	  alert("Se ha registrado correctamente");
 	 return true;
 	}
+ 
+
+
 
 	
 		

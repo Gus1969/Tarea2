@@ -82,7 +82,7 @@
   /* //////////////////////////////////////// formulario registro //////////////////////////////////// */
   .container {
       display: grid;
-      width: 800px;
+      width: 850px;
       grid-template-columns:  1fr;
       grid-template-rows: 1fr;
      justify-items: center;
@@ -91,18 +91,20 @@
     border: 3px solid rgba(255, 0, 255, 0.7);
     margin: 30px  auto;
   }
+
   .container h2 {
-      font-size: 30px;
+    font-size: 30px;
       margin: 30px auto;
       color: white;
       margin-top: 30px;
+     
+
   }
   label {
     color: white;
   }
   select {
     width: 100%;
-    margin-top: 20px;
     border: 2px solid rgba(255, 0, 255, 0.7);
     background: white;
     color: darkslategray;
@@ -130,14 +132,73 @@
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
   }
+  /* //////////////////////////// COMIENZO DE ESTILOS EN MENSAJES DE ERROR ////////////////////////////// */
   #errormsg {
-    color: red;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 20px;
+    color:  rgb(255, 255, 255);
+    background-color: transparent;
+    padding: 10px 10px;
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  #errorpwd {
+    color:  white;
+    background-color: transparent;
+    padding: 10px 10px;
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  #errorpwd1 {
+    color:  white;
+    background-color: transparent;
+    padding: 10px 10px;
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  #errorgenero {
+    color:  white;
+    background-color: transparent;
+    padding: 10px 10px;
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  #erroredad {
+    color:  white;
+    background-color: transparent;
+    padding: 10px 10px;
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin-top: 20px;
    
   }
+  #errorjoven {
+    color:  white;
+    background-color: transparent;
+    padding: 10px 10px;
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  #errorterm {
+    color:  white;
+    background-color: transparent;
+    padding: 10px 10px;
+    font-size: 17px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    margin-top: 20px;
+  }
   
+  /* //////////////////////////// FIN DE ESTILOS EN MENSAJES DE ERROR ////////////////////////////// */
   
   button{
     background-color:rgba(255, 0, 255, 0.7);
@@ -173,7 +234,7 @@
       border: none;
     }
     nav {
-      width: 126%;
+      width: 100%;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
     }
@@ -228,7 +289,7 @@
         border: 2px solid rgba(255, 0, 255, 0.7);
       }
       select {
-        width: 60%;
+        width: 100%;
         margin-top: 10px;
         border: 2px solid rgba(255, 0, 255, 0.7);
         background: transparent;

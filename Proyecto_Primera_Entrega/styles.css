@@ -8,8 +8,8 @@
  html{
     position: relative;
     background:  darkslategrey;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
     
 } 
 /*/////PRE LOADER //////////////////////////*/
@@ -65,12 +65,7 @@
   }
 }
 /* //////////////////////////////////////////////////////// inicio del html /////////////////////////////////////// */
-/* .contenedor {
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  
-} */
+ 
 nav {
   display: grid;
  background: rgba(255, 0, 255, 0.7);
@@ -192,6 +187,7 @@ button .canciones {
   position: relative;
   overflow: hidden;
   margin: 35px 40px 20px 90px;
+  max-width: 1000px;
  
 }
 .carousel h2 {
@@ -349,12 +345,13 @@ footer span {
   color: white;
   font-size: 18px;
 }
+
 @media (min-width: 300px)  and (max-width: 768px) {
    
    nav  {
    width: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 50px;
   } 
   nav.logo {
     grid-column-start: 1;
@@ -376,9 +373,8 @@ footer span {
     color: white;
       display: inline;
     font-size: 15px;
-   
       text-decoration: none;
-     padding-bottom: 35px;
+     
   }
   nav .register {
     grid-column-start: 1;
@@ -399,6 +395,7 @@ footer span {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 320px 360px 1fr;
+      max-height: 600px;
       
     } 
     .texto-carousel {
@@ -415,8 +412,6 @@ footer span {
     .carousel {
       display: grid;
       grid-template-columns: 1fr;
-      margin: 35px 5px 20px 5px;
-      width: 100%;
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 2;
@@ -424,7 +419,8 @@ footer span {
       background: rgba(255, 0, 255, 0.7);
        text-align: center;  
       padding: 4em 0;
-      height: 20.5em;
+      height: 16.5em;
+      margin: 10px 5px 10px 5px;
      
     }
     .carousel h2 {
@@ -479,6 +475,16 @@ footer span {
       color: white;
       display: block;
     }
+    
+   section {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      justify-content: center;
+      align-items: center; 
+    }
     .table-title {
       display: grid;
       grid-template-columns: 1fr;
@@ -486,29 +492,21 @@ footer span {
       grid-column-start: 1;
       justify-items: center;
       align-items: center;
-    }
-   section {
-     margin: 10px 0;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      
-      grid-row-start: 3;
-      grid-row-end: 4;
-      justify-content: center;
-      align-items: center; 
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
     }
     
 }
-@media (min-width: 769px) and  (max-width: 1690px) {
+@media (min-width: 769px) and  (max-width: 1025px) {
   nav {
     display: grid;
    background: rgba(255, 0, 255, 0.7);
    grid-template-columns: 1fr 1fr 1fr;
-   grid-template-rows: 150px;
+   grid-template-rows: 100px;
    justify-items: center;
    align-items: center;
-   height: 150px;
    grid-column-start: 1 ;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -543,10 +541,10 @@ footer span {
     list-style-type: none;
     color: white;
       display: inline;
-    font-size: 16px;
+    font-size: 15px;
    
       text-decoration: none;
-      padding: 8px;
+      padding: 5px;
   }
    
    nav.registro {
@@ -567,26 +565,19 @@ footer span {
    color: black;
   
   }
-  /* main {
-    display: grid;
-    grid-template-columns: 400px 1fr;
-    grid-template-rows: 1fr;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  } */
+
   .texto-carousel {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 200fr;
     grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
     grid-column-start: 1;
     grid-column-end: 2;
     padding: 20px 30px;
-    border-bottom: 4px dotted rgba(255, 0, 255, 0.7);
-    width: 100%;
+    max-width: 70%;
+   
+    
   }
   .texto-carousel h2 {
     color: white;
@@ -596,42 +587,37 @@ footer span {
   }
   .texto-carousel .lead {
     font-size: 22px;
-    padding: 10px 20px;
+    padding: 10px 0;
     color: white;
   }
   button  {
     padding: 10px 10px;
     background-color:  rgba(255, 0, 255, 0.7);
     border-radius: 20%;
+    margin: 30px 0;
   }
   button .canciones {
     color: white;
     text-decoration: none;
+    margin: auto;
   }
   
-  /* ////////////////////////// carousel /////////////////////////////// */
   .carousel {
     grid-column-start: 2;
     grid-column-end: 3;
-    justify-items: center;
-    align-items: center;
-  }
-  .carousel {
     background: rgba(255, 0, 255, 0.7);
     text-align: center;
-    padding: 4em 0;
-    height: 26.5em;
-    max-width: 850px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    margin: 30px auto;
+    padding: 2em 0;
+    height: 20.5em;
+    max-width: 700px;
+    
+    margin: 20px 20px;
   }
   .carousel h2 {
     margin: 0;
-    margin-top: -1.7em;
+    margin-top: -1.3em;
     padding: 0;
-    font-size: 1em;
+    font-size: 0.5rem;
     text-align: center;
     color: #bbbbbb;
   }
@@ -643,11 +629,7 @@ footer span {
     overflow: hidden;
     list-style: none;
     position: relative;
-  
-    /* -webkit-transition: transform .5s;
-    -moz-transition: transform .5s;
-    -o-transition: transform .5s;
-    transition: transform .5s; */
+
   }
   .carousel .slides li {
     width: 25%;
@@ -684,9 +666,7 @@ footer span {
     list-style: none;
     text-align: center;
     bottom: 1em;
-    
       position: absolute; 
-     
       width: 104px; 
       left: 50%;
       margin-left: -52px; 
@@ -737,8 +717,6 @@ footer span {
     grid-column-start: 1;
     justify-items: center;
     align-items: center;
-    
-    
   }
  section {
    margin: 10px 0;
@@ -752,3 +730,26 @@ footer span {
     align-items: center; 
   }
 }
+
+  @media (min-width:901px) and (max-width: 1230px) {  
+    .item .toppers {
+      list-style-type: none;
+      color: white;
+        display: inline;
+      font-size: 14px;
+        text-decoration: none;
+        padding: 7px;
+    }
+     nav.register {
+      grid-column-start: 3 ;
+      grid-column-end: 4;
+      justify-content: center;
+    }
+    .register .item {
+    display: inline;
+    padding: 10px;
+    }
+    }
+
+
+  

@@ -10,6 +10,10 @@
       background:  darkslategrey;
   
   } 
+  .card {
+    background:  rgba(255, 0, 255, 0.7) !important;
+    color: white !important;
+  }
   
   header {
     margin-left: 150px;
@@ -46,6 +50,11 @@
   
   padding: 20px;
   } 
+  .container {
+
+    margin-top: 6%;
+    margin-bottom: 2%;
+  }
   h2 {
     text-align: center;
     color: white;
@@ -73,4 +82,26 @@
    align-items: center;
  
  }
+ @media (max-width: 768px) {
+   .container {
+     margin-top: 20% !important;
+     margin-bottom: 5%;
+   }
+   h2 {
+     margin-top: 10% !important;
+   }
+   .card {
+     width: 100% !important;
+   }
+ }
+  @media (min-width: 769px)  {
+  .container {
+    margin-top: 10% !important;
+    margin-bottom: 5%;
+  }
+  h2 {
+    margin-top: 10% !important;
+  }
+  
+ } 
  
