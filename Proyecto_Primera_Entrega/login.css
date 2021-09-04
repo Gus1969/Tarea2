@@ -128,15 +128,17 @@
   footer {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 150px;
+    grid-template-rows: 100px;
     justify-items: center;
     align-items: center;
     background: rgba(255, 0, 255, 0.7);
   }
-  footer span {
-    color: white;
-    font-size: 18px;
-  }
+  
+  footer  span p  {
+     color: white;
+     font-size: 18px;
+   }
+  
   @media (min-width: 300px)  and (max-width: 768px) {
     
     nav {
@@ -209,6 +211,19 @@
     display: grid;
    
   }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+    justify-items: center;
+    align-items: center;
+    background: rgba(255, 0, 255, 0.7);
+  }
+  
+  footer  span p  {
+     color: white;
+     font-size: 12px;
+   }
 }
   
   @media (min-width: 769px) and  (max-width: 1025px) {
@@ -305,6 +320,18 @@
     display: grid;
    
   }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+    justify-items: center;
+    align-items: center;
+    background: rgba(255, 0, 255, 0.7);
+  }
+  footer  span p  {
+     color: white;
+     font-size: 15px;
+   }
   }
 
   

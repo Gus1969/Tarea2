@@ -93,6 +93,9 @@
    .card {
      width: 100% !important;
    }
+   .footer span  {
+     font-size: 12px;
+   }
  }
   @media (min-width: 769px)  {
   .container {
