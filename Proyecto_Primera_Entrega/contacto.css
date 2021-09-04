@@ -136,7 +136,7 @@ textarea:focus {
   background: white;
 }
 
-.footer {
+footer {
   display: grid;
   grid-template-rows: 100px;
   grid-column-start: 1;
@@ -146,7 +146,7 @@ textarea:focus {
   background: rgba(255, 0, 255, 0.7);
 }
 
-.footer  span  {
+footer  span  {
   display: grid;
    color: white;
    justify-content: center;
@@ -297,21 +297,18 @@ textarea:focus {
     display: grid;
    }
    
-.footer {
+footer {
   display: grid;
   grid-template-rows: 100px;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
+ justify-items: center;
+ align-items: center;
   background: rgba(255, 0, 255, 0.7);
 }
 
-.footer  span  {
-  display: grid;
+footer  span  {
    color: white;
-   justify-content: center;
-   align-items: center;
+   font-size: 18px;
+  
  }
   
 }
