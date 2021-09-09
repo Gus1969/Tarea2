@@ -1,81 +1,51 @@
 			
-/*
-$(document).ready(function() { 
-	 let suboCanciones = function(){
-	 
-	 let temas = null;
-	
-		let   reproducciones = "";
-		let  nombre = "";
-	 $.ajax({
-		 async: false,
-		  url: "datos.json",
-		 success: function(resultado) {
-			temas = resultado.songs; 
-			let top3 = [];
-			let tabla;
-			let sonido; 
-			
-			
-		
-			$("#buscador").on("keyup", function() {
-				let valor = $(this).val().toLowerCase();
-				$("#hits .col-12").filter(function() {
-				 $(this).toggle($(this).text().toLowerCase().indexOf(valor) > 1)
-				});
-			  });
-				  //songs.sort();
-					temas.sort(function(a, b){
-						return a.reproducciones - b.reproducciones;
-					});
-					temas.reverse();
-					console.log(temas);
-					for(let  i = 0; i <= 3; i++){
-						sonido = `<audio controls src="./canciones/${songs[i].ruta}"></audio>`
-						 tabla += `<tr><td class=".table-row  .cancion">${songs[i].nombre}</td><td>${sonido}</td></tr>`
-		 }	
-					$("#tablero .table-row body").append(tabla);
-							
-					}
-					
-				});
-					return temas
-				}();
-	
-
-				let  html = "";
-				
-					for( let i = 0; i < suboCanciones.length; i++)  {                     
-					
-				
-
-			html += `
-					<div class="card text-center">
-					<div class="col-12">
-					<img src='./IMG/imagenes/icono_${suboCanciones[i].icono}.png 'width=65%' alt='cancion'>
-					<br>
-					<h3>${suboCanciones[i].nombre}</h3>
-					<p>Reproducciones: ${suboCanciones[i].reproducciones}</p>
-					<br>
-					<audio controls src="./songs/${suboCanciones[i].ruta}" type="audio/mp3" width='100%'>
-					</audio>
-					</div>
-					</div>
-					`
-				   
-		}
-		document.getElementById('hits').innerHTML = html;
-		
-});*/
-
-
-
-
 $(window).on('load',function(){
 	setTimeout(function(){ 
 $('.page-loader').fadeOut('slow');
 	},3000);
  });
+
+
+
+const main = document.getElementsByTagName("main")[0];
+
+const crearYAgregarProducto = (song)=> {
+  const contenedorSong = document.createElement("div");
+  const imagenSong = document.createElement("img");
+  const nombreArtista = document.createElement("h1");
+  const nombreSong = document.createElement("h2");
+  const audioSong = document.createElement("audio");
+  
+  
+   audioSong.setAttribute("controls",  "audio.mp3");
+  audioSong.setAttribute("src",  song.ruta);
+  console.log(audioSong)
+  
+  imagenSong.setAttribute("src", song.icono);
+  nombreSong.textContent = song.nombre;
+  nombreArtista.textContent = song.artista;
+
+  contenedorSong.classList.add("producto");
+ 
+
+
+  contenedorSong.appendChild(imagenSong);
+  contenedorSong.appendChild(nombreArtista);
+  contenedorSong.appendChild(nombreSong);
+  contenedorSong.appendChild(audioSong);
+  
+  
+  main.appendChild(contenedorSong);
+}
+console.log(crearYAgregarProducto);
+
+for (let i = 0; i < songs.length; i++) {
+  crearYAgregarProducto(songs[i]);
+}
+
+
+
+
 
 
 /////////////////////VALIDAR FORMULARIO DE REGISTRO ////////////////////
@@ -118,8 +88,20 @@ function enviarDatos(registro) {
 	  alert("Se ha registrado correctamente");
 	 return true;
 	}
- 
 
+	////////////////// FORMULARIO CONTACTO //////////////////
+
+	// function focus() {
+	// 	document.getElementById("mensaje").style.background = "black";
+	// 	document.getElementById("mensaje").style.color = "white";
+	// 	}
+		
+	// 	function blur() {
+	// 	document.getElementById("mensaje").style.background = "black";
+	// 	}
+ 
+	
+	
 
 
 	

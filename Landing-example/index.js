@@ -1,3 +1,7 @@
+
+  
+
+
 setTimeout(function() {
     $('.inner div').addClass('done'); 
     
@@ -12,3 +16,7 @@ setTimeout(function() {
         }, 500)
     }, 500)
   }, 1500)
+
+
+  
+ 

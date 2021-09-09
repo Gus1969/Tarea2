@@ -18,7 +18,7 @@
 	height: 100vh;
 	position: absolute;
 	background: #272727;
-	z-index: 1000;
+	z-index: 99;
 }
 	.texto {
 		color: #666;
@@ -595,9 +595,8 @@ footer span p {
     padding: 25px 30px;
     max-width: 70%;
     margin: 30px 10px 20px 52px;
-   
-    
   }
+  
   .texto-carousel h2 {
     color: white;
     font-weight: bold;
