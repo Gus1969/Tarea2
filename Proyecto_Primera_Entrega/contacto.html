@@ -28,17 +28,17 @@
        <h2> Sugerencias</h2>
        <br>
        <br>
-       <label for="nombre">Nombre</label>
+       <label for="nombre">Nombre <span id="errormsgName"></span> </label>
        <input type="text" name="nombre" id="nombre" required>
        <br>
        <br>
-       <label for="email">Email</label>
+       <label for="email">Email<span id="errormsgemail"></span></label>
        <input type="email" name="email" id="email" required>
        <br>
        <br>
-       <label for="msj">Mensaje</label>
-       <textarea  type="text"   name=" msj" id="mensaje" ></textarea> 
-       <button type="submit" name="submit">Enviar </button>
+       <label for="msj">Mensaje <span id="errormessage"></span> </label>
+       <textarea  type="text"   name="msj" id="mensaje" ></textarea> 
+       <button type="submit" name="submit" onclick="return reach(this.form)">Enviar </button>
       </form>
      </section>
      <footer class="footer">

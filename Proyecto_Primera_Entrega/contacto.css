@@ -83,7 +83,7 @@
    max-width: 700px;
   }
   form {
-   padding: 30px 50px;
+   padding: 30px 80px;
    background: darkslategray;
    grid-column-start: 1;
    grid-column-end: 2;
@@ -97,6 +97,7 @@
     color: white;
     grid-column-start: 1;
     grid-column-end: 2;
+   
   }
   input {
     width: 100%;
@@ -114,7 +115,7 @@
     height: 100px;
     background: transparent;
     border: 3px solid rgba(255, 0, 255, 0.7);
-    border-radius: 10%;
+    border-radius: 5%;
   }
   button {
     background: rgba(255, 0, 255, 0.7);
@@ -134,6 +135,7 @@ textarea:focus {
   cursor: pointer;
   border: 3px solid rgba(255, 0, 255, 0.7);
   background: white;
+  outline: none;
 }
 
 footer {
@@ -152,6 +154,29 @@ footer  span  {
    justify-content: center;
    align-items: center;
  }
+
+ /*////////////////////ERRORES///////////////////////////////////*/
+
+ #errormsgName {
+   font-size: 14px;
+  color: white;
+  font-style: italic;
+   margin-left: 50px;
+  
+ 
+ }
+ #errormsgemail {
+  font-size: 14px;
+ color: white;
+ font-style: italic;
+ margin-left: 50px;
+}
+#errormessage {
+  font-size: 14px;
+ color: white;
+ font-style: italic;
+ margin-left: 50px;
+}
 
 @media (min-width: 300px)  and (max-width: 768px) {
   

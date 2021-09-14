@@ -91,14 +91,47 @@ function enviarDatos(registro) {
 
 	////////////////// FORMULARIO CONTACTO //////////////////
 
-	// function focus() {
-	// 	document.getElementById("mensaje").style.background = "black";
-	// 	document.getElementById("mensaje").style.color = "white";
-	// 	}
+	function reach(formulario) { 
+		if(formulario.nombre.value.trim().length === 0) {
+			document.getElementById('errormsgName').innerHTML = "Campo obligatorio";
+				return false;
+		} else {
+			let  re = /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/; 
+			if(!re.test(formulario.email.value)){
+				document.getElementById('errormsgemail'). innerHTML = " ¡Ingrese su correo electrónico!";
+		  return false;
+		} else  
 		
-	// 	function blur() {
-	// 	document.getElementById("mensaje").style.background = "black";
-	// 	}
+			if(formulario.msj.value === "") {
+				document.getElementById('errormessage'). innerHTML = " ¡Ingrese su sugerencia!";
+				return false;
+		} else 
+		alert("Su mensaje ha sido enviado. ¡Muchas gracias!");
+				return true;
+		}
+	}
+			
+		
+		
+		// const actualizaInfo = (maximoCaracteres) => {
+		// 	let elemento = document.getElementById("mensaje");
+		// 	let info = document.getElementById("cantidad");
+
+		// 	if(elemento.value.length >= maximoCaracteres) {
+		// 		info.textContent = "Máximo 200 caracteres";
+		// 	} else {
+		// 		const difMax = maximoCaracteres - elemento.value.length
+		// 		info.textContent = `Puede seguir escribiendo ${difMax} caracteres`
+		// 	}  
+		// 	alert("su mensaje fue enviado. Muchas gracias");
+		// 		return true;
+		// }
+		// 	}
+		
+	
+
+	
+
  
 	
 	

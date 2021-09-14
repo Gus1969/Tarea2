@@ -57,7 +57,6 @@
     color: white;
       display: inline;
     font-size: 20px;
-   
       text-decoration: none;
       padding: 10px;
   }
@@ -106,7 +105,7 @@
   select {
     width: 100%;
     border: 2px solid rgba(255, 0, 255, 0.7);
-    background: white;
+    background: transparent;
     color: darkslategray;
   }
   
@@ -122,12 +121,11 @@
     border: 2px solid rgba(255, 0, 255, 0.7);
   }
   
-  input[type=text]:focus, input[type=password]:focus {
-    
-    outline: none;
+   input[type=text]:focus, input[type=password]:focus, select:focus {
+     outline: none; 
   }
-  
-  /* Overwrite default styles of hr */
+   
+   
   hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
@@ -209,6 +207,7 @@
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    font-size: 18px;
   }
   footer {
     display: grid;
@@ -236,7 +235,7 @@
     nav {
       width: 100%;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
     }
     nav.logo {
       grid-column-start: 1;
@@ -259,7 +258,6 @@
       color: white;
         display: inline;
       font-size: 15px;
-     
         text-decoration: none;
         padding-bottom: 20px;
     }
@@ -277,7 +275,7 @@
     .register .item {
       display: inline;
       padding: 8px;
-      font-size: 11px;
+      font-size: 15px;
       }
       input[type=text], input[type=password] {
         width: 300px;
@@ -319,7 +317,7 @@
         font-size: 12px;
       }
     }
-  @media (min-width: 769px) and  (max-width: 1025px) {
+  @media (min-width: 769px) and  (max-width: 1225px) {
     .container {
       grid-template-columns:  1fr;
       width: 600px;
@@ -331,10 +329,9 @@
       display: grid;
      background: rgba(255, 0, 255, 0.7);
      grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: 150px;
+     grid-template-rows: 80px;
      justify-items: center;
      align-items: center;
-     height: 120px;
      grid-column-start: 1 ;
       grid-column-end: 3;
       grid-row-start: 1;
@@ -369,7 +366,7 @@
       list-style-type: none;
       color: white;
         display: inline;
-      font-size: 16px;
+      font-size: 14px;
      
         text-decoration: none;
         padding: 8px;
@@ -386,7 +383,7 @@
     }
     
     .item .toppers:hover {
-      padding: 10px;
+      padding: 7px;
       border-radius: 10%;
       text-transform: uppercase;
       transform: all 1s ease-in-out;

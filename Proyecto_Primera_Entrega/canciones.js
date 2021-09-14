@@ -39,7 +39,7 @@
 		{
 			nombre: "Radio Ga-ga",
 			ruta: "./songs/queen.mp3",
-			icono: "./IMG/Queen.jpg",
+			icono: "./IMG/Queen1.png",
 			artista: "Queen"
 		},
 		{
