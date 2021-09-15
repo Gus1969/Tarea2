@@ -111,23 +111,18 @@ function enviarDatos(registro) {
 		}
 	}
 			
+		//////////////////////// filtro canciones //////////////////////////////
 		
-		
-		// const actualizaInfo = (maximoCaracteres) => {
-		// 	let elemento = document.getElementById("mensaje");
-		// 	let info = document.getElementById("cantidad");
+		$("#search").on("keyup", function() {
+			let valor = $(this).val().toLowerCase();
+			$("main .producto").filter(function() {
+			  $(this).toggle($(this).text().toLowerCase().indexOf(valor) > -1)
+			});
+		  });
 
-		// 	if(elemento.value.length >= maximoCaracteres) {
-		// 		info.textContent = "Máximo 200 caracteres";
-		// 	} else {
-		// 		const difMax = maximoCaracteres - elemento.value.length
-		// 		info.textContent = `Puede seguir escribiendo ${difMax} caracteres`
-		// 	}  
-		// 	alert("su mensaje fue enviado. Muchas gracias");
-		// 		return true;
-		// }
-		// 	}
-		
+
+
+			
 	
 
 	
