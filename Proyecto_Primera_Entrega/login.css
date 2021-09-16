@@ -73,14 +73,13 @@
     border-radius: 10%;
     text-transform: uppercase;
     transform: all 1s ease-in-out;
-    border: 2px solid black;
-   color: black;
   
   }
 
   /* /////////////////////////////////form //////////////// */
   .form-container {
     text-align: center;
+    align-items: center;
     display: grid;
     grid-template-columns: 150px 1fr;
    row-gap: 20px;
@@ -88,8 +87,8 @@
     border: 2px solid rgba(255, 0, 255, 0.7);
     margin: 20px auto;
     max-width: 750px;
-    padding: 40px;
-    font-size: 23px;
+    padding: 30px;
+    font-size: 18px;
     
   }
   input {

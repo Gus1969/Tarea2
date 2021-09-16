@@ -65,9 +65,7 @@
     border-radius: 10%;
     text-transform: uppercase;
     transform: all 1s ease-in-out;
-    border: 2px solid black;
-   color: black;
-  
+   
   }
   .title {
     font-size: 34px;

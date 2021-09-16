@@ -29,9 +29,7 @@
 		letter-spacing: 0.3rem;
 		font-weight: bold;
 		line-height: 1.5;
-	}
-
-
+  }
 
 .spinner {
 	position: relative;
@@ -40,7 +38,6 @@
   height: 320px;
   margin: 0 auto;
   background-color: rgba(255, 0, 255, 0.7);
-
   border-radius: 100%;  
    -webkit-animation: sk-scaleout 1.5s infinite ease; 
    animation: sk-scaleout 1.5s infinite ease; 
@@ -135,7 +132,7 @@ padding: 20px;
 /* /////////////////////////////////////main/////////////////////////////// */
 main {
   display: grid;
-  grid-template-columns: 400px 1fr;
+  grid-template-columns: 500px 1fr;
   grid-template-rows: 1fr;
   grid-column-start: 1;
   grid-column-end: 3;
@@ -188,6 +185,7 @@ button .canciones {
   overflow: hidden;
   margin: 35px 40px 20px 90px;
   max-width: 1000px;
+  border: 5px solid white;
  
 }
 .carousel h2 {
@@ -324,6 +322,7 @@ button .canciones {
     display: table-cell;
   padding:1em;
   border: rgba(255, 0, 255, 0.7) 1px solid;
+  color: white;
 }
 
   
@@ -336,10 +335,11 @@ button .canciones {
 footer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 150px;
+  grid-template-rows: 100px;
   justify-items: center;
   align-items: center;
   background: rgba(255, 0, 255, 0.7);
+  bottom: 0;
 }
 footer span p {
   color: white;
@@ -429,6 +429,7 @@ footer span p {
       padding: 4em 0;
       height: 15.5em;
       margin: 10px 10px;
+      border: 2px solid white;
      
     }
     .carousel h2 {
@@ -447,7 +448,6 @@ footer span p {
        overflow: hidden; 
       list-style: none;
       position: relative;
-    
       -webkit-transition: transform .5s;
       -moz-transition: transform .5s;
       -o-transition: transform .5s;
@@ -457,6 +457,8 @@ footer span p {
       width: 25%;
       position: relative;
       float: left;
+     
+      
     }
     .carousel li p{
       margin-top: 0;  
@@ -476,6 +478,7 @@ footer span p {
       margin-left: -1.5em;
       margin-right: 0.5em;
       vertical-align: middle;
+    
     }
     .carousel li span.author {
       margin-top: 1em;
@@ -629,6 +632,7 @@ footer span p {
     height: 20.5em;
     max-width: 700px;
     margin: 20px 20px;
+    border: 3px solid white;
   }
   .carousel h2 {
     margin: 0;
