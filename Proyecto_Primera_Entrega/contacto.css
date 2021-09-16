@@ -67,7 +67,6 @@
   }
   .item .toppers:hover {
     padding: 20px;
-    border-radius: 10%;
     text-transform: uppercase;
     transform: all 1s ease-in-out;
   }
