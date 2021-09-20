@@ -119,9 +119,7 @@ function enviarDatos(registro) {
 			  $(this).toggle($(this).text().toLowerCase().indexOf(valor) > -1)
 			});
 		  });
-
-
-
+		
 			
 	
 
