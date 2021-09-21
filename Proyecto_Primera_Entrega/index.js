@@ -93,7 +93,7 @@ function enviarDatos(registro) {
 
 	function reach(formulario) { 
 		if(formulario.nombre.value.trim().length === 0) {
-			document.getElementById('errormsgName').innerHTML = "Campo obligatorio";
+			document.getElementById('errormsgName').innerHTML = "Ingrese su nombre";
 				return false;
 		} else {
 			let  re = /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/; 
