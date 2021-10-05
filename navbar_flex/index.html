@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+        }
+        header {
+            background-color: aqua;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+        }
+        header .brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+        header>nav {
+           padding: 15px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            
+        }
+        ul li {
+            text-decoration: none;
+            display: inline;
+            padding: 0 10px;
+            list-style-type: none;
+            font-size: 15px;
+          color:black;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 15px;
+            position: relative;
+        
+  
+}
+li:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+li:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+        
+       
+        @media (max-width: 768px) {
+            body {
+            width: 100vw;
+        }
+        header {
+            background-color: aqua;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+           
+           
+        }
+        header .brand {
+            display: flex;
+            font-size: 25px;
+            align-self: center;
+            
+            
+        }
+        header>nav {
+           
+            display: flex;
+            align-self: flex-end;
+            justify-content: end;
+            
+        }
+        ul li {
+            text-decoration: none;
+            list-style-type: none;
+            font-size: 12px;
+            text-transform: uppercase;
+          color:black;
+            text-transform: uppercase;
+            text-decoration: none;
+            display:block;
+            padding: 10px;
+            position: relative;
+        
+  
+}
+
+
+        }
+        @media (min-width: 768px) and (max-width: 990px) {
+            body {
+            width: 100vw;
+        }
+        header {
+            background-color: aqua;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+        }
+        header .brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+        }
+        header>nav {
+           padding: 10px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            
+        }
+        ul li {
+            text-decoration: none;
+            display: inline;
+            list-style-type: none;
+            font-size: 13px;
+          color:black;
+            text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 5px;
+            position: relative;
+        
+  
+}
+li:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+li:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+        }
+    </style>
+</head>
+<body>
+   
+    <header>
+        <div class="brand">LOGO</div>
+        <nav>
+            <ul>
+                <li>Uno</li>
+                <li>Dos</li>
+                <li>Tres</li>
+                <li>Cuatro</li>
+                <li>Cinco</li>
+                <li>Seis</li>
+            </ul>
+        </nav>
+        
+    </header>
+    
+</body>
+</html>
