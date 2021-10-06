@@ -1,6 +1,10 @@
-const diasHabiles = require("./app")
+const alumnos = require("./app")
 
-diasHabiles.forEach((e) =>{
-    console.log(e)
+// diasHabiles.forEach((e) =>{
+//     console.log(e)
     
-});
+//});
+
+  alumnos.forEach((item) => {
+    console.log(item)
+  });
