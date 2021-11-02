@@ -1,6 +1,6 @@
 const express = require('express');
 const axios = require('axios');
-const PORT = 35000;
+const PORT = 3000;
 
 const app = express();
 
@@ -34,7 +34,7 @@ app.get('/repositorios/:userId', async (req, res) => {
 
 
 
-app.listen(35000, (req, res) => {
+app.listen(3000, (req, res) => {
     console.log( `app listening on port ${PORT}`);
-});n
+});
 
