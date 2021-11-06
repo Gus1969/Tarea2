@@ -43,6 +43,18 @@ for (let i = 0; i < songs.length; i++) {
   crearYAgregarProducto(songs[i]);
 }
 
+//songs.sort();
+songs.sort(function(a, b){
+	return a.reproducciones - b.reproducciones;
+});
+songs.reverse();
+console.log(songs);
+for(var i = 0; i <= 2; i++){
+	sonido = `<audio controls src="./canciones/${songs[i].ruta}"><p>Su navegador no soporta el elemento de audio.</p></audio>`
+	 tabla += `<tr><td class="cancion d-none d-md-block" id="cancion">${songs[i].nombre}</td><td>${sonido}</td></tr>`
+}	
+$("#tablero tbody").append(tabla);
+
 
 
 
